@@ -1,0 +1,137 @@
+/* Importando fonte do google  - Roboto Mono*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Resetando estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gerais */
+body {
+    font-family: "Roboto Mono";
+    font-weight: 300;
+    background-color: #000;
+    /* Cor de fundo preta */
+    margin: 0;
+    padding: 0;
+    color: #39FF14;
+    /* Verde fluorescente */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: scroll;
+    font-size: 16px;
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    color: #CCFFCC;
+    margin-bottom: 1em;
+    /* Cor do header h1 e span */
+    padding: 1em;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+header span {
+    font-size: .9em;
+    font-style: oblique;
+}
+
+/* Estilos do guia de tags */
+.item {
+    margin-bottom: 10vh;
+    min-height: 100vh;
+}
+
+.tag {
+    font-size: 2em;
+    font-weight: 100;
+    margin: .5em .5em;
+}
+
+.exemplo {
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-left: .9em;
+}
+
+.descricao {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #c5c5c5c5;
+    margin-left: .9em;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background: #000;
+    padding: 1em;
+    border: 1px solid #39FF14;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+/* Estilo para o scroll snap */
+html {
+    scroll-behavior: smooth;
+    /* Suaviza a rolagem */
+
+}
+
+/* Adiciona estilo para tornar o layout responsivo */
+@media (max-width: 1024px) {
+    .item {
+        margin-bottom: 10vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        margin-bottom: 8vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        margin-bottom: 5vh;
+    }
+}
+
+@media (max-width: 384px) {
+    header h1 {
+        font-size: 2em;
+        /* Ajusta o tamanho do título */
+    }
+
+    header span {
+        font-size: 0.8em;
+        /* Ajusta o tamanho do texto do span */
+    }
+
+    .tag {
+        font-size: 1.5em;
+    }
+
+    .exemplo,
+    .descricao {
+        font-size: 1em;
+
+    }
+
+    .item {
+        margin-bottom: 4vh;
+    }
+}
